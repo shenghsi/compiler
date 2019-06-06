@@ -19,6 +19,7 @@ https://github.com/antlr/antlr4/tree/master/runtime/Cpp and see the instructions
 Linux”. Type the following in the Ubuntu terminal window:
 mkdir build && mkdir run && cd build
 cmake .. -DANTLR_JAR_LOCATION=/Users/shxi/omscs/CS8803compiler/Summer_Compilers_Project_1/antlr/antlr-4.7.2-complete.jar -DWITH_DEMO=True
+make
 DESTDIR=../run make install
 
 The last command above will take a while to approach 100% completion.
