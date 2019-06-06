@@ -33,7 +33,8 @@ Enter subdirectory antlr4-master/runtime/Cpp/run/usr/local/lib. Type the followi
 copy the ANTLR libraries to the standard system location and make them available to programs:
 ```bash
 sudo cp * /usr/local/lib
-sudo ldconfig
+sudo ldconfig (Linux)
+sudo update_dyld_shared_cache (OSX)
 ```
 Now you can change to your home directory and delete all of directory antlr4-master:
 ```bash
