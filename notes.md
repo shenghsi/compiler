@@ -10,6 +10,13 @@ After syntatic match, check:
 2. are variables compatible for the current operator?
 3. is result compatible with left-hand side?
 ```
+### ANTLR
+```
+# generate parse tree
+antlr4 tiger.g4
+antjc *.java
+grun tiger tigerprogram -gui ../test1.tiger
+```
 
 ### Download and install the C++ runtime for ANTLR
 Go to https://github.com/antlr/antlr4 and click the green Clone or download button. Then click the
