@@ -1,3 +1,17 @@
+### Graph coloring
+Chaitin's algorithm
+```
+1 Until there are nodes with degree < k:
+ choose such node and push it into the stack;
+ delete the node and all its edges from the graph.
+2 If the graph is non-empty (and all nodes have degree >= k), then:
+ choose a node (using some heuristics) and spill it to the memory;
+ delete the node and all its edges from the graph.
+ if this results to some nodes with degree < k, then go to the step 1;  
+ otherwise continue with the step 2.
+3 Successively pop nodes off the stack and color them in the lowest color not used by some neighbor.
+```
+
 ### Notes
 syntatic:
 ```bash
