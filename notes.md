@@ -11,7 +11,35 @@ Chaitin's algorithm
  otherwise continue with the step 2.
 3 Successively pop nodes off the stack and color them in the lowest color not used by some neighbor.
 ```
-
+Optimistic coloring (Briggs et al)
+```
+If all nodes have a degree >= k, then instead of spilling order the nodes and push them into stack.
+ When taking nodes back from the stack they may still be colorable!
+```
+Chaitin-Briggs's algorithm
+```
+1 Until there are nodes with degree < k:
+ choose such node and push it into the stack;
+ delete the node and all its edges from the graph.
+2 If the graph is non-empty (and all nodes have degree >= k), then:
+ choose a node, push it into the stack, and delete it (together with edges) from the graph;
+ if this results to some nodes with degree < k, then go to the step 1;
+ otherwise continue with the step 2.
+3 Pop a node from the stack and color it by the least free color.
+ If the is no free colors, then choose an uncolored node, spill it into the memory, and go to the step 1.
+```
+Spilling heuristics
+```
+ Choosing a node for spilling is a critical for efficiency.
+ Chaitin's heuristics:
+  to minimize the value of cost/degree , where cost is a spilling cost and degree is a current degree of the node;
+  ie. choose for spilling a "cheapest" possible node which decreases the degree of most other nodes.
+ Alternative popular metrics: cost/degree^2.                                                                                                                                      
+ Variations:
+  spilling of interference regions;
+  partitioning of live ranges;
+  rematerialization.
+  ```
 ### Notes
 syntatic:
 ```bash
