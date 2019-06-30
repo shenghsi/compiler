@@ -40,6 +40,10 @@ Spilling heuristics
   partitioning of live ranges;
   rematerialization.
   ```
+What is spill cost?
+```
+ Cost of extra load and store-instructions
+```
 ### Notes
 syntatic:
 ```bash
