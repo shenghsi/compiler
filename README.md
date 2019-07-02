@@ -51,6 +51,16 @@ Arithmetic and Logic operations
 Control Flow operations
 Coprocessor Operations (if there is a co processor)
 ```
+### Instruction Costs
+| Instruction | Cost |
+|-------------|------|
+|add r2, r1   | 1 cycle |
+|muli c, r1   | 10 cycles |
+|load r2, r1  | 3 cycles
+|store r2, r1  | 3 cycles |
+|movem r2, r1  | 4 cycles |
+|movex r3, r2, r1  | 5 cycles |
+
 
 ### Notes
 syntatic:
