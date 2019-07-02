@@ -44,13 +44,14 @@ What is spill cost?
 ```
  Cost of extra load and store-instructions
 ```
-characteristics that make a good ISA:
+#### characteristics that make a good ISA:
 ```
 Data and Memory Operations
 Arithmetic and Logic operations
 Control Flow operations
 Coprocessor Operations (if there is a co processor)
 ```
+
 ### Notes
 syntatic:
 ```bash
