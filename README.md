@@ -1,3 +1,9 @@
+### Three rules for blocks : 
+```
+Rule 1: The first statement in the program is the leader
+Rule 2: Any statement that is the target of a branch statement is a leader
+Rule 3: Any statement that immediately follows a branch or return statement is a leader
+```
 ### Graph coloring
 Chaitin's algorithm
 ```
