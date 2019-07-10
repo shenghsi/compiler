@@ -16,8 +16,8 @@ Register Name | Number | Usage
 |-------------|--------|--------|
 zero | 0 | Constant 0                   
 at | 1 | Reserved for assembler
-v0 | 2 | Expression evaluation and return from function
-v1 | 3 | Expression evaluation and return from function
+v0 | 2 | Value (return from function)
+v1 | 3 | Value (return from function)
 a0 | 4 | Argument 1
 a1 | 5 | Argument 2
 a2 | 6 | Argument 3
