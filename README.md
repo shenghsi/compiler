@@ -47,7 +47,12 @@ sp | 29 | Stack pointer
 fp | 30 | Frame pointer
 ra | 31 | Return address (used by function call)
 
-
+Switch/Case statement
+```
+1. Create an array of jump targets
+2. Load the entry indexed by the variable two bits
+3. Jump to that address using the jump register, or jr, instruction
+```
 
 ### Three rules for blocks : 
 ```
