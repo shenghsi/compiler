@@ -53,7 +53,14 @@ Switch/Case statement
 2. Load the entry indexed by the variable two bits
 3. Jump to that address using the jump register, or jr, instruction
 ```
-
+Function control flow
+```
+MIPS uses the jump-and-link instruction jal to call functions.
+1. The jal saves the return address (the address of the next instruction) 
+in the dedicated register $ra, before jumping to the function.
+2. jal is the only MIPS instruction that can access the value of the
+program counter, so it can store the return address PC+4 in $ra.
+```
 ### Three rules for blocks : 
 ```
 Rule 1: The first statement in the program is the leader
