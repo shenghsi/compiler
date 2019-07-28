@@ -176,6 +176,13 @@ Coprocessor Operations (if there is a co processor)
 
 
 ### Notes
+#### Deterministic Finite Automata
+```
+Deterministic: Machine is in a state. Upon receipt of a symbol will go to a unique state.
+Finite: Have a finite number of states
+Automata: (pl. of automaton) Self operating machine
+```
+#### syntatic, semantic
 syntatic:
 ```bash
 scaned token matches wiht grammar in parser
