@@ -182,6 +182,8 @@ Deterministic: Machine is in a state. Upon receipt of a symbol will go to a uniq
 Finite: Have a finite number of states
 Automata: (pl. of automaton) Self operating machine
 ```
+![img](http://latex.codecogs.com/svg.latex?%5Ctextrm%7BRegular%5C%3BExpression%7D%5CLeftrightarrow%5Ctextrm%7BNFA%7D%5CLeftrightarrow%5Ctextrm%7BDFA%7D%5Cequiv%5Ctextrm%7BRegular%5C%3BLanguage%7D)
+
 #### syntatic, semantic
 syntatic:
 ```bash
